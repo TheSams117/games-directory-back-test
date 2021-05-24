@@ -1,0 +1,24 @@
+{
+  "name": "games-directory-back-test",
+  "version": "1.0.0",
+  "description": "Project to test a game directory web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheSams117/games-directory-back-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheSams117/games-directory-back-test/issues"
+  },
+  "homepage": "https://github.com/TheSams117/games-directory-back-test#readme",
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0"
+  }
+}
