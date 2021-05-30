@@ -5,7 +5,7 @@ const faker = require('faker').random;
 
 let response;
 let game = {
-    name: `Warzone ${faker.words(3)}`,
+    name: `WarzoneAdd ${faker.words(3)}`,
     console: "PC",
     genre: "FPS",
     img: "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/warzone/common/social-share/zeus-s3-wz-social-share.jpg"
@@ -25,7 +25,7 @@ let repeatedGame = {
 describe("When the user wants to add a new game", () => {
     describe("When the user adds a new game successfully", () => {
         before(async () => {
-            response = await axios.post(BASE_URL + '/games', game);
+            response = await axios.post(BASE_URL + 'games', game);
         });
         it("Then it should return a game with properties id, name, console, genre, img", () => {
             const gameCreated = response.data;
@@ -55,7 +55,7 @@ describe("When the user wants to add a new game", () => {
         before(async () => {
             await axios
                 .post(
-                    BASE_URL + '/games', badGame
+                    BASE_URL + 'games', badGame
                 )
                 .then((res) => {
                     response = res.response
@@ -78,7 +78,7 @@ describe("When the user wants to add a new game", () => {
         before(async () => {
             await axios
                 .post(
-                    BASE_URL + '/games', repeatedGame
+                    BASE_URL + 'games', repeatedGame
                 )
                 .then((res) => {
                     response = res.response

@@ -6,7 +6,7 @@ let response;
 
 describe("When the user wants to list all the games", () => {
     before(async () => {
-        response = await axios.get(BASE_URL + '/games');
+        response = await axios.get(BASE_URL + 'games');
     });
     it("Then it should return games with properties id, name, console, genre and img", () => {
         const game = response.data[0];
