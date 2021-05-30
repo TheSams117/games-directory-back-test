@@ -4,7 +4,7 @@
   "description": "Project to test a game directory web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha e2e/**/*.spec.js --timeout 5000"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
     "axios": "^0.21.1",
     "chai": "^4.3.4",
     "mocha": "^8.4.0"
+  },
+  "dependencies": {
+    "faker": "^5.5.3"
   }
 }
